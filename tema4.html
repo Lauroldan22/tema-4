@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratorio 13</title>
+</head>
+<body>
+    <script>
+        //funciones matematicas 
+        function suma(a, b) {
+            return a + b;
+        }
+        function resta(a, b) {
+    return a - b;
+}
+function multiplicacion(a, b) {
+    return a * b;
+}
+function division(a, b) {
+    if (b === 0) {
+        console.error("No se puede dividir por cero");
+        return undefined; 
+    }
+    return a / b;
+}
+//funcion calculadora 
+function calculadora(num1, num2, operacion) {
+    switch (operacion) {
+        case "suma":
+            return suma(num1, num2);
+        case "resta":
+            return resta(num1, num2);
+        case "multiplicacion":
+            return multiplicacion(num1, num2);
+        case "division":
+            return division(num1, num2);
+        default:
+            console.error("Operación no válida");
+            return undefined;
+    }
+    let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+    let numero2 = parseFloat(prompt("Ingresa el segundo número:");
+    let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
+    let resultado = calculadora(numero1, numero2, operacion);
+    if (resultado !== undefined) {
+    console.log("El resultado de la operación es: " + resultado);
+}
+    </script>
+</body>
+</html>
