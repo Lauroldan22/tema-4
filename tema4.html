@@ -8,43 +8,41 @@
 <body>
     <script>
         //funciones matematicas 
-        function suma(a, b) {
-            return a + b;
+        function suma(a,b) {
+            return a+b;
         }
-        function resta(a, b) {
-    return a - b;
+        function resta(a,b) {
+    return a-b;
 }
-function multiplicacion(a, b) {
-    return a * b;
+function multi(a,b) {
+    return a*b;
 }
-function division(a, b) {
-    if (b === 0) {
-        console.error("No se puede dividir por cero");
-        return undefined; 
+function divi(a,b) {
+    return a/b;
     }
-    return a / b;
-}
 //funcion calculadora 
-function calculadora(num1, num2, operacion) {
-    switch (operacion) {
+function calculadora(n1, n2, operacion);{
+    switch (operacion){
         case "suma":
-            return suma(num1, num2);
+            return suma(n1, n2);
         case "resta":
-            return resta(num1, num2);
-        case "multiplicacion":
-            return multiplicacion(num1, num2);
-        case "division":
-            return division(num1, num2);
+            return resta(n1, n2);
+        case "multi":
+            return multiplicacion(n1, n2);
+        case "divi":
+            return division(n1, n2);
         default:
-            console.error("Operación no válida");
-            return undefined;
+            return "Operación no válida...!";
+            
     }
-    let numero1 = parseFloat(prompt("Ingresa el primer número:"));
-    let numero2 = parseFloat(prompt("Ingresa el segundo número:");
-    let operacion = prompt("Ingresa la operación (suma, resta, multiplicacion, division):");
+    let numero1 = prompt("Ingresa el primer número:");
+    let numero2 = prompt("Ingresa el segundo número:");
+    let operacion = prompt("Ingresa la operación (suma, resta, multi, divi):");
+
     let resultado = calculadora(numero1, numero2, operacion);
-    if (resultado !== undefined) {
+{
     console.log("El resultado de la operación es: " + resultado);
+    document.write ("el resultado es: ")
 }
     </script>
 </body>
